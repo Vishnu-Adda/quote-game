@@ -12,3 +12,10 @@ def header_init():
     header = figlet_format("GUESS THE QUOTE")
     header = colored(header, color=choice(colors))
     print(header)
+
+
+def goodbye():
+    colors = ("grey", "red", "green", "yellow", "blue", "magenta", "cyan", "white")
+    bye = figlet_format("GOODBYE!")
+    bye = colored(bye, color=choice(colors))
+    print(bye)
