@@ -1,8 +1,10 @@
+"""
+Separate file for functions
+"""
 from random import choice
 from pyfiglet import figlet_format
 from termcolor import colored
 
-# Separate file for functions
 
 # Making the header for flair
 def header_init():
