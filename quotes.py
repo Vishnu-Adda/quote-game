@@ -1,8 +1,4 @@
 # http://quotes.toscrape.com/
-import requests
-from bs4 import BeautifulSoup
-from time import sleep
-from random import choice
 from quotes_functions import header_init, goodbye
 
 # Init calls
@@ -10,8 +6,6 @@ header_init()
 
 
 # Scraping portion
-base_url = "http://quotes.toscrape.com/"
-
 print("Wait while we're scraping!")
 
 
@@ -33,7 +27,7 @@ def scrape_quotes():
 
         next_btn = soup.find(class_="next")
         url = next_btn.find("a")["href"] if next_btn else None
-        # sleep(2)  # So we don't overload their server (or attract attention)
+        sleep(1)  # So we don't overload their server (or attract attention)
     return all_quotes
 
 
