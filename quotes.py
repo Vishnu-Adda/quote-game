@@ -1,12 +1,8 @@
-from random import choice
-from pyfiglet import figlet_format
-from termcolor import colored
+from quotes_functions import header_init
 
-# Header w/ random colors, just for flair :)
-colors = ("grey", "red", "green", "yellow", "blue", "magenta", "cyan", "white")
+# Init calls
+header_init()
 
-header = figlet_format("GUESS THE QUOTE")
-header = colored(header, color=choice(colors))
-print(header)
+
 
 # Scraping portion
